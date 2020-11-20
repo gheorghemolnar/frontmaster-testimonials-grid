@@ -1,0 +1,141 @@
+:root {
+  /* Primary */
+  --primary-01: hsl(263, 55%, 52%);
+  --primary-02: hsl(217, 19%, 35%);
+  --primary-03: hsl(219, 29%, 14%);
+  --primary-04: hsl(0, 0%, 100%);
+
+  /* Neutral */
+  --neutral-01: hsl(0, 0%, 81%);
+  --neutral-02: hsl(210, 46%, 95%);
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.container .left {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+.container .left .row {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 283px;
+}
+.container .left .row .data {
+  box-sizing: border-box;
+  width: 25%;
+  word-wrap: wrap;
+  min-height: 283px;
+  padding: 15px;
+}
+.container .left .row .data-x2 {
+  box-sizing: border-box;
+  width: 75%;
+  min-height: 283px;
+  padding: 15px;
+}
+.container .right {
+  box-sizing: border-box;
+  display: flex;
+  width: 25%;
+}
+
+.testimony {
+  border-radius: 10px;
+  padding: 5px 20px;
+  height: 100%;
+}
+.testimony .person .name {
+  color: var(--primary-04);
+}
+.testimony .person .quality {
+  color: var(--neutral-01);
+}
+.testimony .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.testimony p {
+  color: var(--neutral-01);
+}
+
+.testimony.prime-01 {
+  background-color: var(--primary-01);
+}
+.testimony.prime-01 .title {
+  color: var(--primary-04);
+}
+
+.testimony.prime-02 {
+  background-color: var(--primary-02);
+}
+.testimony.prime-02 .title {
+  color: var(--primary-04);
+}
+
+.testimony.prime-03 {
+  background-color: var(--primary-03);
+}
+.testimony.prime-03 .title {
+  color: var(--primary-04);
+}
+.testimony.prime-04 {
+  background-color: var(--primary-04);
+}
+.testimony.prime-04 .person .name {
+  color: var(--primary-03);
+}
+.testimony.prime-04 .title {
+  color: var(--primary-03);
+}
+.testimony.prime-04 p {
+  color: var(--primary-02);
+}
+
+.testimony .header {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.testimony .header .person div:first-child {
+  margin: 3px 0 3px 0;
+  font-size: 14px;
+}
+.testimony .header .person {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.testimony .header .photo img {
+  border-radius: 60px;
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 375px) {
+  .container .left,
+  .container .right,
+  .container .left .row .data,
+  .container .left .row .data-x2 {
+    width: 100%;
+  }
+}
