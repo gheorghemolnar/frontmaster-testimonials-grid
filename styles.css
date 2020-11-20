@@ -13,6 +13,11 @@ body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 13px;
   font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
 }
 
 .container {
@@ -63,6 +68,7 @@ body {
   height: 100%;
   padding: 20px;
 }
+
 .testimony .person .name {
   color: var(--primary-04);
 }
@@ -79,6 +85,9 @@ body {
 
 .testimony.prime-01 {
   background-color: var(--primary-01);
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position-x: 75%;
 }
 .testimony.prime-01 .title {
   color: var(--primary-04);
@@ -133,6 +142,9 @@ body {
 }
 
 @media (max-width: 375px) {
+  body {
+    padding: 0;
+  }
   .container .left,
   .container .right,
   .container .left .row .data,
