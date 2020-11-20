@@ -58,9 +58,10 @@ body {
 }
 
 .testimony {
+  box-sizing: border-box;
   border-radius: 10px;
-  padding: 5px 20px;
   height: 100%;
+  padding: 20px;
 }
 .testimony .person .name {
   color: var(--primary-04);
